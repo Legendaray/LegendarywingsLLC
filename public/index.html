@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Legendary Wings LLC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #0b1e3f;
+      color: #f5f5f5;
+    }
+    header {
+      background-color: #0b1e3f;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+    header img {
+      height: 60px;
+    }
+    nav a {
+      color: gold;
+      margin-left: 2rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: url('assets/hero-image.jpg') center/cover no-repeat;
+      color: white;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero button {
+      margin: 0.5rem;
+      padding: 1rem 2rem;
+      background-color: gold;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    section {
+      padding: 3rem 2rem;
+    }
+    .section-title {
+      color: gold;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .services, .fleet, .testimonials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .card {
+      background-color: #1e2d4f;
+      padding: 1.5rem;
+      border-radius: 10px;
+      flex: 1 1 200px;
+    }
+    .card h3 {
+      color: gold;
+    }
+    .fleet img {
+      width: 100%;
+      max-width: 300px;
+    }
+    .gps img {
+      width: 100%;
+      max-width: 600px;
+      margin-top: 1rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 500px;
+      margin-top: 2rem;
+    }
+    input, textarea {
+      padding: 1rem;
+      border: none;
+      border-radius: 5px;
+    }
+    footer {
+      background-color: #081629;
+      color: #aaa;
+      padding: 2rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="Legendary Wings LLC" />
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#flota">Flota</a>
+      <a href="#gps">GPS</a>
+      <a href="#testimonios">Testimonios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Transporte rápido, seguro y confiable</h1>
+    <button>Ver Servicios</button>
+    <button>Contáctanos</button>
+  </div>
+
+  <section id="nosotros">
+    <h2 class="section-title">Sobre Nosotros</h2>
+    <p>Misión: Brindar soluciones logísticas confiables 24/7<br>
+    Visión: Ser líderes en transporte de vans en EE.UU.<br>
+    Valores: Compromiso, seguridad, profesionalismo</p>
+  </section>
+
+  <section id="servicios">
+    <h2 class="section-title">Nuestros Servicios</h2>
+    <div class="services">
+      <div class="card"><h3>Entregas express 24/7</h3><p>Transporte rápido en todo el país</p></div>
+      <div class="card"><h3>Rastreo en tiempo real</h3><p>Seguimiento GPS activo 24/7</p></div>
+      <div class="card"><h3>Personal capacitado</h3><p>Profesionales con experiencia</p></div>
+    </div>
+  </section>
+
+  <section id="flota">
+    <h2 class="section-title">Nuestra Flota</h2>
+    <div class="fleet">
+      <div>
+        <img src="assets/ram-promaster.jpg" alt="RAM ProMaster" />
+        <p>RAM ProMaster</p>
+      </div>
+      <div>
+        <img src="assets/mercedes-sprinter.jpg" alt="Mercedes-Benz Sprinter" />
+        <p>Mercedes-Benz Sprinter</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gps">
+    <h2 class="section-title">Rastreo GPS</h2>
+    <p>Ofrecemos monitoreo en tiempo real para que tengas total visibilidad de tu carga en tránsito.</p>
+    <div class="gps">
+      <img src="assets/gps-map.jpg" alt="Mapa de Rastreo GPS" />
+    </div>
+  </section>
+
+  <section id="testimonios">
+    <h2 class="section-title">Testimonios</h2>
+    <div class="testimonials">
+      <div class="card"><h3>Juan G.</h3><p>Servicio excelente, siempre a tiempo</p></div>
+      <div class="card"><h3>Laura M.</h3><p>Muy confiables y profesionales</p></div>
+      <div class="card"><h3>Carlos V.</h3><p>Mi empresa los recomienda totalmente</p></div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2 class="section-title">Contacto</h2>
+    <form>
+      <input type="text" placeholder="Nombre" required />
+      <input type="email" placeholder="Correo electrónico" required />
+      <textarea placeholder="Mensaje" rows="5"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p>Tel: 312-961-3335</p>
+    <p>Email: contact@legendarywingsllc.com | info@legendarywingsllc.com</p>
+    <p>Dirección: 3058 W Belmont Ave., Suite 2F-2, Chicago, IL 60618</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Legendary Wings LLC. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
