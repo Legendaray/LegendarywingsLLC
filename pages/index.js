@@ -86,12 +86,12 @@ export default function HomePage() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact">
-        <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
-        <p className="mb-1">Phone: <strong>(312) 961-3335</strong></p>
-        <p className="mb-1">Email: <a href="mailto:contact@legendarywingsllc.com" className="text-gold-400 underline">contact@legendarywingsllc.com</a></p>
-        <p>Email: <a href="mailto:info@legendarywingsllc.com" className="text-gold-400 underline">info@legendarywingsllc.com</a></p>
-      </section>
-    </main>
+          <section id="contact">
+          <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
+          <p className="mb-1">Phone: <strong>(312) 961-3335</strong></p>
+          <p className="mb-1">Email: <a href="mailto:contact@legendarywingsllc.com" className="text-gold-400 underline">contact@legendarywingsllc.com</a></p>
+          <p className="mb-1">Info: <a href="mailto:info@legendarywingsllc.com" className="text-gold-400 underline">info@legendarywingsllc.com</a></p>
+          </section>
+      </main>
   );
 }
